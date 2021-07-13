@@ -1,0 +1,8 @@
+////
+/// 外観テーマ
+////
+@mixin theme($theme) {
+  @at-root html[data-theme="#{$theme}"] {
+    @content;
+  }
+}
