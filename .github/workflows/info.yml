@@ -6,5 +6,7 @@ jobs:
     name: Information
     runs-on: ubuntu-latest
     steps:
-      - run: echo `pwd`
-      - run: echo `ls -aF`
+      - run: pwd
+      - run: ls -aF1
+      - run: npm -v
+      - run: node -v
