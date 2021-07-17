@@ -6,7 +6,9 @@ jobs:
     name: Information
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: pwd
-      - run: ls -aF1
-      - run: npm -v
+      - run: ls -AF1
       - run: node -v
+      - run: npm -v
+      - run: git --version
