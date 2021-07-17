@@ -1,0 +1,10 @@
+name: "ワークフローの情報"
+on: workflow_dispatch
+
+jobs:
+  info:
+    name: Information
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo pwd: `pwd`
+      - run: echo ls: `ls -aF`
