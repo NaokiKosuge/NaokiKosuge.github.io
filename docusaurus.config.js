@@ -11,8 +11,9 @@ module.exports = {
   title: 'Libra NK',  // ウェブサイトのタイトル
   tagline: 'NaokiKosuge の個人ノート',  // サイトのタグライン（キャッチコピー）
   favicon: 'img/favicon.ico',  // ファビコンのURLまたはパス
-  url: 'https://your-docusaurus-test-site.com',  // サイトURL
+  url: 'https://NaokiKosuge.github.io',  // サイトURL
   baseUrl: '/',  // サイトのベースURL
+  
   noIndex: true,  // HTML の noindex メタを有効にするか
   scripts: [],
   clientModules: [],
@@ -26,8 +27,9 @@ module.exports = {
   onBrokenLinks: 'warn',  // 壊れたリンクを検出した時のDocusaurusの動作 ('ignore' | 'log' | 'warn' | 'error' | 'throw')
   onBrokenMarkdownLinks: 'log',  // 壊れたマークダウンリンクを検出した時のDocusaurusの動作 ('ignore' | 'log' | 'warn' | 'error' | 'throw')
   onDuplicateRoutes: 'warn',  // 重複するルートを検出したときのDocusaurusの動作 ('ignore' | 'log' | 'warn' | 'error' | 'throw')
-  organizationName: 'NaokiKosuge', // GitHub ユーザー名
-  projectName: 'portfolio', // リポジトリ名
+  projectName: 'NaokiKosuge.github.io', // リポジトリ名
+  organizationName: 'NaokiKosuge',  // GitHub ユーザー名
+  trailingSlash: false,  // URL末尾のスラッシュ「/」
   /**
    * テーマ設定
    *
