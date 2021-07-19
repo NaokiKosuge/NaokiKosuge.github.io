@@ -1,6 +1,3 @@
-// このプロジェクトのリポジトリ
-const repository = 'https://github.com/NaokiKosuge/portfolio/';
-
 /** @see https://docusaurus.io/docs/docusaurus.config.js */
 module.exports = {
   
