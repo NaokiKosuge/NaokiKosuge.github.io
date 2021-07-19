@@ -1,7 +1,7 @@
 # ビルドと「GitHub Pages」へのリリースを行う。
 # 参考: https://docusaurus.io/docs/deployment#triggering-deployment-with-github-actions
 #
-name: "GitHub Pages へのデプロイ"
+name: "GitHub Pages へのリリース"
 on:
   workflow_dispatch:
   push:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: webfactory/ssh-agent@v0.5.0
+      - uses: webfactory/ssh-agent@v0.5.3
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
       - name: Release to GitHub Pages
