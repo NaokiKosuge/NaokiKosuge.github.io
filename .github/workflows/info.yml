@@ -14,5 +14,3 @@ jobs:
       - run: node -v
       - run: npm -v
       - run: git --version
-      - run: git config user.name
-      - run: git config user.email
