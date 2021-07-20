@@ -250,13 +250,13 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // ソースコードのリポジトリ
-          editUrl: repository,
+          editUrl: 'https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/',
         },
         // @docusaurus/plugin-content-blog に渡されます（無効にするにはfalse）
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: repository,
+          editUrl: 'https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/',
           // RSS/Atomフィード (https://{your-domain}/blog/rss.xml OR https://{your-domain}/blog/atom.xml)
           feedOptions: {
             type: 'all',
