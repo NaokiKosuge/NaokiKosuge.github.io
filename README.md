@@ -26,7 +26,8 @@
 
 # @NaokiKosuge のパーソナルサイト
 
-このプロジェクトは [@NaokiKosuge](https://github.com/NaokiKosuge) のパーソナルサイトです。[Docusaurus 2](https://docusaurus.io/) を使用して作成されています。
+このプロジェクトは [@NaokiKosuge](https://github.com/NaokiKosuge) のパーソナルサイトです。[Docusaurus 2](https://docusaurus.io/)
+を使用して作成されています。サイトは、[NaokiKosuge.github.io](https://NaokiKosuge.github.io) に公開しています。
 
 ---
 
