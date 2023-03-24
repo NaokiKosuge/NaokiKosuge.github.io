@@ -1,1 +1,0 @@
-export const PROFILE_PICTURE_URL = 'https://avatars.githubusercontent.com/u/11253232';

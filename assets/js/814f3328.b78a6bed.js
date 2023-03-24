@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\u8272\u3005\u306a\u300c\u3007\u3007\u4e16\u4ee3\u300d\u3092\u8abf\u3079\u3066\u307f\u305f","permalink":"/blog/various-generations"}]}')}}]);
