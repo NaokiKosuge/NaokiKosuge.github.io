@@ -1,52 +1,51 @@
 /** @see https://docusaurus.io/docs/docusaurus-config */
 module.exports = {
-
   /*
   サイト設定
   */
 
   /** ウェブサイトのタイトル */
-  title: 'Libra NK',
+  title: "Libra NK",
   /** サイトのタグライン（キャッチコピー） */
-  tagline: 'NaokiKosuge の個人ノート',
+  tagline: "NaokiKosuge の個人ノート",
   /** ファビコンのURLまたはパス */
-  favicon: 'img/favicon.ico',
+  favicon: "img/favicon.ico",
   /** サイトURL */
-  url: 'https://NaokiKosuge.github.io',
+  url: "https://NaokiKosuge.github.io",
   /** サイトのベースURL */
-  baseUrl: '/',
+  baseUrl: "/",
   /** HTML の noindex メタを有効にするか */
   noIndex: true,
   scripts: [],
   clientModules: [],
   stylesheets: [],
   /** タイトルの区切り文字 */
-  titleDelimiter: '|',
+  titleDelimiter: "|",
 
   /*
   Docusaurus設定
   */
 
   /** 壊れたリンクを検出した時のDocusaurusの動作 ('ignore' | 'log' | 'warn' | 'error' | 'throw') */
-  onBrokenLinks: 'warn',
+  onBrokenLinks: "warn",
   /** 壊れたマークダウンリンクを検出した時のDocusaurusの動作 ('ignore' | 'log' | 'warn' | 'error' | 'throw') */
-  onBrokenMarkdownLinks: 'log',
+  onBrokenMarkdownLinks: "log",
   /** 重複するルートを検出したときのDocusaurusの動作 ('ignore' | 'log' | 'warn' | 'error' | 'throw') */
-  onDuplicateRoutes: 'warn',
+  onDuplicateRoutes: "warn",
   /** リポジトリ名 */
-  projectName: 'NaokiKosuge.github.io',
+  projectName: "NaokiKosuge.github.io",
   /** GitHub ユーザー名 */
-  organizationName: 'NaokiKosuge',
+  organizationName: "NaokiKosuge",
   /** URL末尾のスラッシュ「/」 */
   trailingSlash: false,
   /** i18n */
   i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja'],
+    defaultLocale: "ja",
+    locales: ["ja"],
     localeConfigs: {
       ja: {
-        label: '日本語',
-        direction: 'ltr',
+        label: "日本語",
+        direction: "ltr",
       },
     },
   },
@@ -69,7 +68,7 @@ module.exports = {
     /** メタ画像。OGPに使用されます。 */
     image: 'img/lnk.png',
     /** 追加の html メタデータ（既存のメタデータをオーバーライドできます）。 */
-    metadata: [{ name: 'twitter:card', content: 'summary' }],
+    metadata: [{ name:'twitter:card'", content:'summary'" }],
     /** アナウンスバー */
     // announcementBar: {
     //   id: 'support_us', // Any value that will identify this message.
@@ -139,7 +138,16 @@ module.exports = {
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
-      additionalLanguages: ['dart', 'java', 'kotlin', 'php', 'rust', 'swift', 'typescript', 'toml'],
+      additionalLanguages: [
+        'dart',
+        'java',
+        'kotlin',
+        'php',
+        'rust',
+        'swift',
+        'typescript',
+        'toml',
+      ],
     },
     /** フッター */
     footer: {
@@ -186,6 +194,11 @@ module.exports = {
       ],
       copyright: `© ${new Date().getFullYear()} @NaokiKosuge`,
     },
+    /** TOC */
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
+    },
   },
   plugins: [
     // PWA
@@ -195,11 +208,11 @@ module.exports = {
         // debug: true,
         offlineModeActivationStrategies: [
           'appInstalled', // サイトをアプリとしてインストールしたユーザーに対してアクティブ化されます（100％信頼できるわけではありません）
-          'standalone',   // アプリをスタンドアロンとして実行しているユーザーに対してアクティブ化されます（多くの場合、PWAがインストールされると）
-          'queryString',  // queryString に `offlineMode=true` が含まれている場合にアクティブになります（PWAデバッグに便利）
-          'mobile',       // モバイルユーザー向けにアクティブ化 (width <= 940px)
-          'saveData',     // `navigator.connection.saveData === true` のユーザーに対してアクティブ化されます
-          'always',       // すべてのユーザーに対してアクティブ化
+          'standalone', // アプリをスタンドアロンとして実行しているユーザーに対してアクティブ化されます（多くの場合、PWAがインストールされると）
+          'queryString', // queryString に `offlineMode=true` が含まれている場合にアクティブになります（PWAデバッグに便利）
+          'mobile', // モバイルユーザー向けにアクティブ化 (width <= 940px)
+          'saveData', // `navigator.connection.saveData === true` のユーザーに対してアクティブ化されます
+          'always', // すべてのユーザーに対してアクティブ化
         ],
         pwaHead: [
           {
@@ -268,13 +281,15 @@ module.exports = {
           routeBasePath: 'notes',
           sidebarPath: require.resolve('./sidebars.js'),
           // ソースコードのリポジトリ
-          editUrl: 'https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/',
+          editUrl:
+            'https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/',
         },
         /** @docusaurus/plugin-content-blog に渡されます（無効にするには false） */
         blog: {
           showReadingTime: true,
           /** Please change this to your repo. */
-          editUrl: 'https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/',
+          editUrl:
+            'https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/',
           /** RSS/Atomフィード (https://{your-domain}/blog/rss.xml OR https://{your-domain}/blog/atom.xml) */
           feedOptions: {
             type: 'all',
@@ -282,7 +297,8 @@ module.exports = {
           },
           /** ブログタイトル */
           blogTitle: '@NaokiKosuge のブログ',
-          blogDescription: 'フロントエンドエンジニア @NaokiKosuge のブログです。',
+          blogDescription:
+            'フロントエンドエンジニア @NaokiKosuge のブログです。',
         },
         /** @docusaurus/plugin-content-pages に渡されます（無効にするには false） */
         pages: {},
@@ -291,12 +307,12 @@ module.exports = {
         /** Google アナリティクス */
         googleAnalytics: {
           trackingID: 'UA-141789564-1',
-          anonymizeIP: false,           // IPを匿名化する必要がありますか？
+          anonymizeIP: false, // IPを匿名化する必要がありますか？
         },
         /** Google Site Tag */
         gtag: {
-          trackingID: 'UA-141789564-1',  // ここで「G-」測定IDを使用することもできます。
-          anonymizeIP: false,            // IPを匿名化する必要がありますか？
+          trackingID: 'UA-141789564-1', // ここで「G-」測定IDを使用することもできます。
+          anonymizeIP: false, // IPを匿名化する必要がありますか？
         },
       },
     ],
