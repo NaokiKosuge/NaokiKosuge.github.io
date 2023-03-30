@@ -81,11 +81,11 @@ module.exports = {
     /** ナビゲーションバー */
     navbar: {
       /** ロゴ横のタイトル */
-      title'Libra NK'K",
+      title: "Libra NK",
       /** ロゴ */
       logo: {
-        alt'Libra NK のロゴ'ゴ",
-        src'img/logo.svg'g",
+        alt: "Libra NK のロゴ",
+        src: "img/logo.svg",
       },
       /**
        * ナビゲーションアイテム
@@ -101,28 +101,28 @@ module.exports = {
        *
        */
       items: [
-        { to: '/notes', label: 'ノート', position: 'left' },
-        { to: '/blog', label: 'ブログ', position: 'left' },
+        { to: "/notes", label: "ノート", position: "left" },
+        { to: "/blog", label: "ブログ", position: "left" },
         {
-          href: 'https://github.com/NaokiKosuge',
-          position: 'right',
-          className: 'icon-link icon-link-github',
-          'aria-label': 'GitHub',
-          title: 'GitHub',
+          href: "https://github.com/NaokiKosuge",
+          position: "right",
+          className: "icon-link icon-link-github",
+          "aria-label": "GitHub",
+          title: "GitHub",
         },
         {
-          href: 'https://twitter.com/NaokiKosuge',
-          position: 'right',
-          className: 'icon-link icon-link-twitter',
-          'aria-label': 'Twitter',
-          title: 'Twitter',
+          href: "https://twitter.com/NaokiKosuge",
+          position: "right",
+          className: "icon-link icon-link-twitter",
+          "aria-label": "Twitter",
+          title: "Twitter",
         },
         {
-          href: 'https://codepen.io/NaokiKosuge',
-          position: 'right',
-          className: 'icon-link icon-link-codepen',
-          'aria-label': 'CodePen',
-          title: 'CodePen',
+          href: "https://codepen.io/NaokiKosuge",
+          position: "right",
+          className: "icon-link icon-link-codepen",
+          "aria-label": "CodePen",
+          title: "CodePen",
         },
       ],
       /**
@@ -136,17 +136,17 @@ module.exports = {
     },
     /** コードブロック */
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/dracula"),
       additionalLanguages: [
-        'dart',
-        'java',
-        'kotlin',
-        'php',
-        'rust',
-        'swift',
-        'typescript',
-        'toml',
+        "dart",
+        "java",
+        "kotlin",
+        "php",
+        "rust",
+        "swift",
+        "typescript",
+        "toml",
       ],
     },
     /** フッター */
@@ -158,36 +158,36 @@ module.exports = {
       // },
       links: [
         {
-          title: 'リンク',
+          title: "リンク",
           items: [
             {
-              label: 'ホーム',
-              to: '/',
+              label: "ホーム",
+              to: "/",
             },
             {
-              label: 'ノート',
-              to: '/notes',
+              label: "ノート",
+              to: "/notes",
             },
             {
-              label: 'ブログ',
-              to: '/blog',
+              label: "ブログ",
+              to: "/blog",
             },
           ],
         },
         {
-          title: 'SNS',
+          title: "SNS",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/NaokiKosuge',
+              label: "GitHub",
+              href: "https://github.com/NaokiKosuge",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/NaokiKosuge',
+              label: "Twitter",
+              href: "https://twitter.com/NaokiKosuge",
             },
             {
-              label: 'CodePen',
-              href: 'https://codepen.io/NaokiKosuge',
+              label: "CodePen",
+              href: "https://codepen.io/NaokiKosuge",
             },
           ],
         },
@@ -203,46 +203,46 @@ module.exports = {
   plugins: [
     // PWA
     [
-      '@docusaurus/plugin-pwa',
+      "@docusaurus/plugin-pwa",
       {
         // debug: true,
         offlineModeActivationStrategies: [
-          'appInstalled', // サイトをアプリとしてインストールしたユーザーに対してアクティブ化されます（100％信頼できるわけではありません）
-          'standalone', // アプリをスタンドアロンとして実行しているユーザーに対してアクティブ化されます（多くの場合、PWAがインストールされると）
-          'queryString', // queryString に `offlineMode=true` が含まれている場合にアクティブになります（PWAデバッグに便利）
-          'mobile', // モバイルユーザー向けにアクティブ化 (width <= 940px)
-          'saveData', // `navigator.connection.saveData === true` のユーザーに対してアクティブ化されます
-          'always', // すべてのユーザーに対してアクティブ化
+          "appInstalled", // サイトをアプリとしてインストールしたユーザーに対してアクティブ化されます（100％信頼できるわけではありません）
+          "standalone", // アプリをスタンドアロンとして実行しているユーザーに対してアクティブ化されます（多くの場合、PWAがインストールされると）
+          "queryString", // queryString に `offlineMode=true` が含まれている場合にアクティブになります（PWAデバッグに便利）
+          "mobile", // モバイルユーザー向けにアクティブ化 (width <= 940px)
+          "saveData", // `navigator.connection.saveData === true` のユーザーに対してアクティブ化されます
+          "always", // すべてのユーザーに対してアクティブ化
         ],
         pwaHead: [
           {
-            tagName: 'link',
-            rel: 'icon',
-            href: '/img/lnk.png',
+            tagName: "link",
+            rel: "icon",
+            href: "/img/lnk.png",
           },
           {
-            tagName: 'link',
-            rel: 'manifest',
-            href: '/manifest.json', // your PWA manifest
+            tagName: "link",
+            rel: "manifest",
+            href: "/manifest.json", // your PWA manifest
           },
           {
-            tagName: 'meta',
-            name: 'theme-color',
-            content: '#304ffe',
+            tagName: "meta",
+            name: "theme-color",
+            content: "#304ffe",
           },
         ],
       },
     ],
     // Sass
-    'docusaurus-plugin-sass',
+    "docusaurus-plugin-sass",
     // Tailwind CSS
     async (context, options) => {
       return {
-        name: 'docusaurus-tailwindcss',
+        name: "docusaurus-tailwindcss",
         configurePostCss(postcssOptions) {
-          // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require('tailwindcss'));
-          postcssOptions.plugins.push(require('autoprefixer'));
+          // Appends TailwindCSS and Autoprefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
           return postcssOptions;
         },
       };
@@ -267,38 +267,38 @@ module.exports = {
        *   - `@docusaurus/plugin-google-gtag`
        *   - `@docusaurus/plugin-sitemap`
        */
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         /** @docusaurus/theme-classic に渡されます。 */
         theme: {
-          customCss: [require.resolve('./src/theme/custom-css/main.scss')],
+          customCss: [require.resolve("./src/theme/custom-css/main.scss")],
         },
         /** @docusaurus/plugin-content-docs に渡されます（無効にするには false） */
         docs: {
           // ドキュメントのファイルシステム上のベースパス
-          path: 'notes',
+          path: "notes",
           // ドキュメントのルーティング上のベースパス
-          routeBasePath: 'notes',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "notes",
+          sidebarPath: require.resolve("./sidebars.js"),
           // ソースコードのリポジトリ
           editUrl:
-            'https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/',
+            "https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/",
         },
         /** @docusaurus/plugin-content-blog に渡されます（無効にするには false） */
         blog: {
           showReadingTime: true,
           /** Please change this to your repo. */
           editUrl:
-            'https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/',
+            "https://github.com/NaokiKosuge/NaokiKosuge.github.io/edit/main/",
           /** RSS/Atomフィード (https://{your-domain}/blog/rss.xml OR https://{your-domain}/blog/atom.xml) */
           feedOptions: {
-            type: 'all',
+            type: "all",
             copyright: `Copyright © ${new Date().getFullYear()} @NaokiKosuge.`,
           },
           /** ブログタイトル */
-          blogTitle: '@NaokiKosuge のブログ',
+          blogTitle: "@NaokiKosuge のブログ",
           blogDescription:
-            'フロントエンドエンジニア @NaokiKosuge のブログです。',
+            "フロントエンドエンジニア @NaokiKosuge のブログです。",
         },
         /** @docusaurus/plugin-content-pages に渡されます（無効にするには false） */
         pages: {},
@@ -306,12 +306,12 @@ module.exports = {
         sitemap: {},
         /** Google アナリティクス */
         googleAnalytics: {
-          trackingID: 'UA-141789564-1',
+          trackingID: "UA-141789564-1",
           anonymizeIP: false, // IPを匿名化する必要がありますか？
         },
         /** Google Site Tag */
         gtag: {
-          trackingID: 'UA-141789564-1', // ここで「G-」測定IDを使用することもできます。
+          trackingID: "UA-141789564-1", // ここで「G-」測定IDを使用することもできます。
           anonymizeIP: false, // IPを匿名化する必要がありますか？
         },
       },
@@ -322,6 +322,6 @@ module.exports = {
    */
   customFields: {
     /** プロフィール画像 */
-    profileImage: 'https://avatars.githubusercontent.com/NaokiKosuge',
+    profileImage: "https://avatars.githubusercontent.com/NaokiKosuge",
   },
 };
