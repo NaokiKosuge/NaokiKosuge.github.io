@@ -464,4 +464,9 @@ module.exports = {
 
 ### ブラウザサポート
 
-Tailwindは、どのスタイルにもベンダープレフィックスを自動的に追加しません。 代わりに [Autoprefixer](https://github.com/postcss/autoprefixer) を使うことをオススメします。
+Tailwindは、どのスタイルにもベンダープレフィックスを自動的に追加しません。 代わりに [Autoprefixer](https://github.com/postcss/autoprefixer)
+を使うことをオススメします。
+
+## 関連ツール
+
+- [FlowBite](https://flowbite.com/): TailwindCSS のコンポーネントライブラリ
