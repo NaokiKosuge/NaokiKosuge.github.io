@@ -58,7 +58,7 @@ module.exports = {
     /** カラーモード */
     colorMode: {
       /** デフォルトの外観モード (`light` | `dark`) */
-      defaultMode: 'light',
+      defaultMode: "light",
       /** ナビゲーションバーのスイッチを非表示にします。単色モードをサポートしたい場合に便利です。 */
       disableSwitch: false,
       /** ハードコードされたdefaultModeの代わりに、ユーザーシステム設定を使用してprefers-color-schemeメディアクエリを使用する必要がある場合 */
@@ -66,9 +66,9 @@ module.exports = {
       /** ダーク/ライトスイッチアイコンオプション */
     },
     /** メタ画像。OGPに使用されます。 */
-    image: 'img/lnk.png',
+    image: "img/lnk.png",
     /** 追加の html メタデータ（既存のメタデータをオーバーライドできます）。 */
-    metadata: [{ name:'twitter:card'", content:'summary'" }],
+    metadata: [{ name: "twitter:card", content: "summary" }],
     /** アナウンスバー */
     // announcementBar: {
     //   id: 'support_us', // Any value that will identify this message.
@@ -81,11 +81,11 @@ module.exports = {
     /** ナビゲーションバー */
     navbar: {
       /** ロゴ横のタイトル */
-      title: 'Libra NK',
+      title'Libra NK'K",
       /** ロゴ */
       logo: {
-        alt: 'Libra NK のロゴ',
-        src: 'img/logo.svg',
+        alt'Libra NK のロゴ'ゴ",
+        src'img/logo.svg'g",
       },
       /**
        * ナビゲーションアイテム
